@@ -1,5 +1,3 @@
-
-
 .header {
     height: 100vh;
     max-height: 500px;
@@ -100,20 +98,33 @@
 
 @media (max-width: 767px) {
     .promo {
-        margin-bottom: 20px;   
+        margin-bottom: 20px;
     }
 }
 
 .promo__photo {
     object-fit: contain;
-    height: auto;
+    max-height: 530px;
     width: 100%;
+    margin: auto;
 }
 
 .promo__description {
     display: flex;
     margin-top: -70px;
-    margin-left: 30px;
+    margin-left: 200px;
+}
+
+@media (max-width: 1280px) {
+    .promo__description {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .promo__description {
+        margin-left: 80px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -160,9 +171,11 @@
     line-height: 22px;
     font-size: 22px;
     margin: 0;
+    color: #696058;
 }
 
 .content {
+    font-family: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     min-width: 320px;
     max-width: 1200px;
     width: 100%;
@@ -179,82 +192,85 @@
     width: 100%;
     overflow-x: hidden;
     margin: 0 auto;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  
     background: #f4ece6;
-  background: linear-gradient(to bottom, #f2f1f0, #f0ebeb);
-  }
-  .two-columns {
+    background: linear-gradient(to bottom, #f2f1f0, #f0ebeb);
+}
+
+.two-columns {
     width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto 0;
-  }
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
     .two-columns {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
-  
+}
+
+.two-columns__brief {
+    width: 175px;
+    color: #2F80ED;
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
     .two-columns__brief {
-        width: 175px;
-        color: #2F80ED;
-        line-height: 1.2;
-        font-size: 24px;
-        font-weight: normal;
-        margin: 0;
-        flex-direction: column;
-      }
-    
-      @media (max-width: 767px) {
-        .two-columns__brief {
-          margin-bottom: 30px;
-        }
-      }
-  
-      .two-columns__brief-second {
-        width: 175px;
-        color: #2F80ED;
-        line-height: 1.2;
-        font-size: 24px;
-        font-weight: normal;
-        margin: 17px 0;
-        flex-direction: column;
-      }
-  
-      .two-columns__main-text {
-        max-width: 80%;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-    
-      @media (max-width: 767px) {
-        .two-columns__main-text {
-          list-style-type: none;
-          padding: 0;
-          max-width: 100%;
-        }
-      }
-  
-      .two-columns__paragraph {
-        line-height: 34px;
-        font-size: 24px;
-        font-weight: normal;
-        margin: 0 0 30px 0;
-      }
-      @media (max-width: 767px) {
-        .two-columns__paragraph {
-          line-height: 28px;
-        font-size: 20px;
-        }
-      }
-  
-      .two-columns__span-accent {
-        line-height: 34px;
-        font-size: 24px;
-        font-weight: bold;
-      }
-  
+        margin-bottom: 30px;
+    }
+}
+
+.two-columns__brief-second {
+    width: 175px;
+    color: #2F80ED;
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 17px 0;
+    flex-direction: column;
+}
+
+.two-columns__main-text {
+    max-width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .two-columns__main-text {
+        list-style-type: none;
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+.two-columns__paragraph {
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 30px 0;
+}
+
+@media (max-width: 767px) {
+    .two-columns__paragraph {
+        line-height: 24px;
+        font-size: 18px;
+    }
+}
+
+.two-columns__span-accent {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 
 
 .cases {
@@ -323,7 +339,7 @@
 
 .cases__item-overlay:hover:before {
     opacity: 1;
-  }
+}
 
 .cases__photo {
     width: 100%;
@@ -371,16 +387,16 @@ a {
 .contacts__telegram {
     margin-top: 50px;
     margin-bottom: 100px;
-  }
-  
-  .contacts__number {
-    font-size:26px;
+}
+
+.contacts__number {
+    font-size: 26px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .contacts__mail {
-    font-size:26px;
-    margin-top:20px;
+    font-size: 26px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
